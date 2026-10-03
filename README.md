@@ -48,12 +48,15 @@ With a 5-week (35 days) overseas lead time, orders must be issued prior to the s
 ### 1. Interactive Web Application (HTML / CSS / JS)
 * **Files**: `index.html`, `style.css`, `app.js`
 * **Features**:
+  * **Dynamic Window Auto-Scaling**: Built with CSS fluid clamp layout, auto-fitting responsive grids, debounced chart resize observers, and a mobile parameter drawer toggle that automatically scales seamlessly across smartphones, tablets, laptops, and 4K ultra-wide displays.
   * Real-time scenario preset pills (`Base Case`, `High Demand +25%`, `Supply Delay 8 wks`, `Price Surge +15%`, `Scrap & Safety Buffer`, `Monthly JIT`).
   * Live parameter sliders (Capacity, Lead Time, Scrap Rate, Safety Buffer, Price Variance, Cadence).
   * Interactive BOM Editor (add, edit, delete items).
   * Visual Gantt Transit Timeline & Chart.js visualizations (Donut Cost Share, Spend by Period, Scenario Matrix).
   * 1-Click CSV / Excel Export & Print-ready executive PDF report.
-* **How to Run**:
+  * Continuous Deployment: Automated GitHub Pages deployment on push via GitHub Actions.
+* **Live Web App**: [https://deckardshaw31.github.io/procurement/](https://deckardshaw31.github.io/procurement/)
+* **How to Run Locally**:
   Simply open `index.html` in any web browser, or serve locally:
   ```bash
   python -m http.server 3000

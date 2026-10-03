@@ -42,6 +42,20 @@
         </div>
       </div>
       <div class="header-actions">
+        <button id="btn-toggle-sidebar" class="btn-toggle-sidebar" title="Toggle Simulation Parameters">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+          </svg>
+          Parameters
+        </button>
         <button id="btn-export-csv" class="btn btn-secondary" title="Export budget and schedule to CSV">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -446,6 +460,19 @@
         </section>
       </main>
     </div>
+
+    <!-- Responsive Footer -->
+    <footer class="app-footer" style="padding: 1.5rem 2.5rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; color: var(--text-muted); font-size: 0.8rem;">
+      <div>
+        <span>🏭 ABC Semiconductor Assembly • Saigon Hi-Tech Park (SHTP)</span>
+        <span style="margin: 0 0.5rem;">•</span>
+        <span>2027 Production Procurement Model</span>
+      </div>
+      <div style="display: flex; gap: 1.5rem;">
+        <span style="color: var(--accent-emerald);">● Dynamic Window Auto-Scale: ON</span>
+        <a href="https://github.com/DeckardShaw31/procurement" target="_blank" rel="noopener" style="color: var(--accent-cyan); text-decoration: none;">GitHub Repository ↗</a>
+      </div>
+    </footer>
   </div>
 
   <!-- Application Logic -->

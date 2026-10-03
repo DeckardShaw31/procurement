@@ -748,6 +748,27 @@ function setupEventListeners() {
   document.getElementById('btn-print').addEventListener('click', () => {
     window.print();
   });
+
+  // Mobile Sidebar Parameters Toggle
+  const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
+  const sidebarPanel = document.querySelector('.sidebar-panel');
+  if (btnToggleSidebar && sidebarPanel) {
+    btnToggleSidebar.addEventListener('click', () => {
+      sidebarPanel.classList.toggle('show-mobile');
+      btnToggleSidebar.classList.toggle('active');
+    });
+  }
+
+  // Automatic window scaling & chart resize listener
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (chartDonut) chartDonut.resize();
+      if (chartBar) chartBar.resize();
+      if (chartMatrix) chartMatrix.resize();
+    }, 120);
+  });
 }
 
 function applyPreset(key) {
